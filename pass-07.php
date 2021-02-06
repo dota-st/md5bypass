@@ -6,7 +6,7 @@
 		$user = $_GET['user'];
 		$pass = $_GET['pass'];
 
-		if($user !== $pass && md5($user) === md5(md5($pass))){
+		if($user !== $pass && md5($user) === md5($pass)){
 			echo "success!<br>";
 			echo file_get_contents('flag.txt')."\n";
 			echo "<a href='pass-08.php'>下一关</a>";
